@@ -10,17 +10,17 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {    
-    behaviors {
-        qta: quick-tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "GLOBAL_HOLD_TAP";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <300>;
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&kp>;
+        behaviors {
+                qta: quick-tap {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "GLOBAL_HOLD_TAP";
+                        #binding-cells = <2>;
+                        flavor = "tap-preferred";
+                        tapping-term-ms = <300>;
+                        quick-tap-ms = <200>;
+                        bindings = <&kp>, <&kp>;
+                };
         };
-    };
         keymap {
                 compatible = "zmk,keymap";
 
