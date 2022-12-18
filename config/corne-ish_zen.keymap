@@ -46,7 +46,7 @@
                 raise_layer {
                         label = "Func";
                         bindings = <
-   &kp  TAB  &kp F12 &kp F7 &kp F8 &kp F9 &none      &none &none &none &none &none &none
+   &kp  TAB  &kp F12 &kp F7 &kp F8 &kp F9 &none      &none &none &none &none &kp BSPC &none
    &kp LCTRL &kp F11 &kp F4 &kp F5 &kp F6 &none      &none &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp C_PP &none
    &kp LSHFT &kp F10 &kp F1 &kp F2 &kp F3 &none      &none &none &none &none &none &none
                   &to 0 &kp SPACE &kp LSFT   &mt RCTL ESC &to 0 &kp RALT
