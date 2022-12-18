@@ -21,6 +21,16 @@
                         bindings = <&kp>, <&kp>;
                 };
         };
+        macros {
+                rett: rett {
+                        label = "rett";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings
+                                = <&kp RET>, <&to 0>
+                        ;
+                };
+        };
         keymap {
                 compatible = "zmk,keymap";
 
@@ -37,7 +47,7 @@
                         label = "Num";
                         bindings = <
    &kp LBKT  &kp LBKT  &kp N7 &kp N8 &kp N9 &kp RBKT   &kp BSLH &kp TAB &none      &kp DEL   &kp BSPC    &kp BSPC
-   &kp LCTRL &kp SEMI  &kp N4 &kp N5 &kp N6 &kp PLUS   &kp RET &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT   &kp SQT
+   &kp LCTRL &kp SEMI  &kp N4 &kp N5 &kp N6 &kp PLUS   &rett &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT   &kp SQT
    &kp LSHFT &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N0     &kp MINUS &kp HOME  &kp PG_DN &kp PG_UP &kp END &kp ESC
                   &to 0 &kp SPACE &kp LSFT   &mt RCTL ESC &to 2 &kp RALT
                         >;
